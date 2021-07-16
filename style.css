@@ -34,3 +34,86 @@ body{
 a{
     padding-left: 42px;
 }
+.intro{
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.intro_left{
+    width: 357px;
+    padding-top: 50px;
+}
+.intro_right{
+    max-width: 541px;
+    margin-left: 130px;
+    margin-bottom: 271px;
+}
+.intro_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+}
+.intro_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.about{
+    background: white;
+}
+.wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.about_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.about_block{
+    width: 540px;
+    text-align: center;
+}
+.about_title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+    margin-top: 119px;
+}
+.about_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 100px;
+}
+.projects{
+    background: #34547A;
+}
+.projects_wrapper{
+    max-height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.projects_block{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.project{
+    width: 141px;
+    padding-left: 40px;
+}
