@@ -6,18 +6,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+    <script src="../jquery-3.6.0.min.js" ></script>
 </head>
 <body>
     <header>
-        <div class="header_logo">
-           <h1>WD</h1>               
-        </div>
-        <div class="header_menu">
-            <a>ГЛАВНАЯ</a> 
-            <a>ОБ АВТОРЕ</a> 
-            <a>РАБОТЫ</a> 
-            <a>ПРОЦЕССЫ</a> 
-            <a>КОНТАКТЫ</a>   
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <h1 id="headerLogo">WD</h1>               
+                 </div>
+                 <div class="header_menu">
+                     <a>ГЛАВНАЯ</a> 
+                     <a>ОБ АВТОРЕ</a> 
+                     <a>РАБОТЫ</a> 
+                     <a>ПРОЦЕССЫ</a> 
+                     <a>КОНТАКТЫ</a>   
+                 </div>
+            </div>
         </div>
                
     </header>
@@ -27,7 +32,7 @@
                 <img class="intro_img" src="../intro_logo.svg" alt="INTRO">
             </div>
             <div class="intro_right">
-                <h1 class="intro_title">
+                <h1 id="myTitle" class="intro_title">
                     Дизайн и верстка
                 </h1>
                 <p class="intro_text">
@@ -36,14 +41,38 @@
                     mollitia harum, illo officiis debitis doloremque! Ipsa aut omnis totam a 
                     officiis minus?
                 </p>
-
+                <button id="myButton" class="intro_button">
+                    НАПИСАТЬ МНЕ
+                </button>
+                <div class="modal" id="myModal">
+                    <div class="modal_content" id="myContent">
+                        <div class="close" id="myClose">
+                            &times;
+                        </div>
+                        <div class="send_wrapper">
+                            <h1 class="modal_title">
+                                Хотите веб-сайт?
+                            </h1>
+                            <form>
+                                <div class="send_form">
+                                    <div>
+                                        <input type="text" class="form1 formstyle" placeholder="Ваше имя">
+                                        <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
+                                    </div>
+                                    <textarea class="form3 formstyle" cols="30" rows="10" placeholder="Сообщение" ></textarea>
+                                    <button class="modal_button" >ОТПРАВИТЬ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="about">
             <div class="wrapper">
                 <div class="about_wrapper">
                     <div class="about_block">
-                        <h2 class="about_title">Обо мне</h2>
+                        <h2 id="aboutTitle" class="about_title">Обо мне</h2>
                         <p class="about_text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque porro 
                             consectetur, deserunt vel error, excepturi distinctio vero esse corporis 
@@ -68,8 +97,106 @@
                 </div>
             </div>
         </section>
+        <section class="scills">
+            <div class="wrapper">
+                <div class="scills_wrapper">
+                    <div class="scills_left">
+                        <h3 class="scills_title">Мои навыки</h3>
+                        <h4 class="scill scill_1">Первый навык</h4> 
+                        <h4 class="scill scill_2">Второй навык</h4> 
+                        <h4 class="scill scill_3">Третий навык</h4> 
+                     
+                    </div>
+                    <div class="scills_right">
+                        <img src="../my_photo.svg" alt="FOTO" class="scills_img">   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="wrapper">
+                <div class="process_wrapper">
+                    <div class="process_block">
+                        <h1 class="process_title">
+                            Как я работаю
+                        </h1>
+                        <p class="process_text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laborum 
+                            aut reprehenderit, accusamus sunt inventore cumque eos pariatur quaerat quod 
+                            nihil dolorem ab fugiat a quibusdam voluptate optio deleniti dolorum.
+                        </p>
+                    </div>
+                    <video src="../verstka.mp4" class="process_video" controls="controls">PROCESS VIDEO</video>
+                    <!-- <video src="../verstka_sz.mp4" class="process_video" controls="controls">PROCESS VIDEO</video> -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="gallery">
+                <div class="gallery_str">
+                    <a href="../gallery1.png" class="lightzoom">
+                        <img src="../gallery1.png" alt="Картинка1" class="gallery_img">
+                    </a>
+                    <a href="../gallery2.png" class="lightzoom">
+                        <img src="../gallery2.png" alt="Картинка2" class="gallery_img">
+                    </a>
+                    <a href="../gallery1.png" class="lightzoom">
+                        <img src="../gallery1.png" alt="Картинка1" class="gallery_img">
+                    </a>
+                    <a href="../gallery2.png" class="lightzoom">
+                        <img src="../gallery2.png" alt="Картинка2" class="gallery_img">
+                    </a>
+                    
+                </div>
+                <div class="gallery_str">
+                    <a href="../gallery2.png" class="lightzoom">
+                        <img src="../gallery2.png" alt="Картинка2" class="gallery_img">
+                    </a>
+                    <a href="../gallery1.png" class="lightzoom">
+                        <img src="../gallery1.png" alt="Картинка1" class="gallery_img">
+                    </a>
+                    <a href="../gallery2.png" class="lightzoom">
+                        <img src="../gallery2.png" alt="Картинка2" class="gallery_img">
+                    </a>
+                    <a href="../gallery1.png" class="lightzoom">
+                        <img src="../gallery1.png" alt="Картинка1" class="gallery_img">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="send">
+            <div class="wrapper">
+                <div class="send_wrapper">
+                    <h1 class="send_title">
+                        Хотите веб-сайт?
+                    </h1>
+                    <p class="send_text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis veniam 
+                        repellat alias autem qui eos consequatur recusandae dolorum aspernatur et 
+                        architecto, dolor quis? Corporis voluptatem labore, non eos reiciendis et.
+                    </p>
+                    <form>
+                        <div class="send_form">
+                            <div>
+                                <input type="text" class="form1 formstyle" placeholder="Ваше имя">
+                                <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
+                            </div>
+                            <textarea class="form3 formstyle" cols="30" rows="10" placeholder="Сообщение" ></textarea>
+                            <button class="form4 formstyle" >ОТПРАВИТЬ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
+    <link rel="stylesheet" href="../lightzoom/style.css">
+    <script src="../lightzoom/lightzoom.js"></script>
+    <script src="../myscript.js"></script>
+
+    <script>jQuery('.lightzoom').lightzoom({speed: 400, viewtitle: true, isOverlayClickClosing: true}); </script>
 </body>
