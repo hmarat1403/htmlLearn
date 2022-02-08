@@ -399,7 +399,7 @@ body{
     background: #EEEFF1;
 }
 .header_logo{
-    font-family: Revalia;
+    font-family: 'Comforter', cursive;
     font-style: normal;
     font-weight: normal;
     cursor: pointer;
@@ -439,9 +439,9 @@ body{
     }
 }
 .header_menu{
-    font-family: Roboto;
+    font-family: Comfortter, cursive;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     cursor: pointer;
     margin-top: 79px;
 }
