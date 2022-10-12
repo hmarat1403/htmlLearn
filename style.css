@@ -430,7 +430,7 @@ body{
     }
 }
 .header_logo:hover::before{
-    animation: 0;
+    animation: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -588,15 +588,13 @@ body{
     font-size: 16px;
     line-height: 26px;
     color: #727272;
-    padding-bottom: 19px;
+    padding-bottom: 10px;
     margin-bottom: 30px;
 }
 .scill_1{
-    position: relative;
+    position: relative;    
 }
-.scill_1:hover::after{
-    content: "78%";
-}
+
 .scill_2{
     position: relative;
 }
@@ -612,6 +610,14 @@ body{
     bottom: 0;
     left: 0;
 }
+.scill_1:hover::after{
+    content: "62%";  
+    background-color: wheat;
+    position: relative;
+    top: 40px;         
+    left: -110px;  
+
+}
 .scill_1::after{
     content: " ";
     width: 245px;
@@ -619,8 +625,11 @@ body{
     background-color: #34547a;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0;     
+    transition: 1000;; 
 }
+
+
 .scill_2::before{
     content: " ";
     width: 445px;
@@ -630,6 +639,9 @@ body{
     bottom: 0;
     left: 0;
 }
+.scill_2:hover::after{
+    content: "78%";     
+}
 .scill_2::after{
     content: " ";
     width: 300px;
@@ -638,6 +650,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
+    padding-top: 4px;
 }
 .scill_3::before{
     content: " ";
@@ -648,6 +661,9 @@ body{
     bottom: 0;
     left: 0;
 }
+.scill_3:hover::after{    
+    content:"56%";          
+}
 .scill_3::after{
     content: " ";
     width: 145px;
@@ -656,7 +672,10 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
+    padding-top: 4px;
 }
+
+
 .scills{
     background-color: white;
 }
@@ -933,3 +952,8 @@ footer{
     margin-top: 56px;
 }
 
+/* .scill_procent{
+    display: none;
+    transition-property: displey;
+    transition-duration: 500;
+} */
