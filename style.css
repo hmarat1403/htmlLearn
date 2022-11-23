@@ -371,10 +371,10 @@ html{
 }
 
 /*###################################################################################################*/
-h1{
+/* h1{
     color: #406694;
     font-size: 48px;
-}
+} */
 p{
     color:black;
     font-size: 16px;
@@ -398,6 +398,8 @@ body{
     background: #EEEFF1;
 }
 .header_logo{
+    color: #406694;
+    font-size: 48px;
     font-family: 'Comforter', cursive;
     font-style: normal;
     font-weight: normal;
